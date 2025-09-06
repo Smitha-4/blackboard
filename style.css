@@ -17,6 +17,15 @@ box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
 padding: 1rem;
 }
 
+@media(max-width:2000px){
+    .controls-sidebar{
+        width: 20%;
+        height: auto;
+        position: static;
+        border-right: none;
+        
+    }
+}
 canvas {
 border: 1px solid #000000;
 background-color: #000000;
