@@ -13,7 +13,8 @@
 
     <div class="whiteboard-container flex flex-col items-center">
           
-        <div class="controls mb-6 w-full flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+        <div class="controls">
+            <center>
             <!-- Tool Selection Buttons -->
             <div class="flex space-x-2">
                 <button id="drawTool" ><i class="fa-solid fa-pen"></i></button>
@@ -27,9 +28,9 @@
                 <button id="clearButton" ><i class="fa-solid fa-broom"></i></button>
                 <button id="resetViewButton" ><i class="fa-solid fa-arrow-rotate-right"></i></button>
                 <button id="savePngButton" ><i class="fa-solid fa-download"></i></button>
-              <!--  <button id="savePdfButton" ><i class="fa-solid fa-file-pdf"></i></button>--> 
+              <button id="savePdfButton" ><i class="fa-solid fa-file-pdf"></i></button>
             </div>
-            
+            </center>
            </div>
 
         <canvas id="whiteboardCanvas" width="2000px" height="2000px"></canvas>
