@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Whiteboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div class="whiteboard-container flex flex-col items-center">
+        <h1 class="text-3xl font-bold mb-6 text-gray-800">Interactive Whiteboard</h1>
+        
+        <div class="controls mb-6 w-full flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <!-- Tool Selection Buttons -->
+            <div class="flex space-x-2">
+                <button id="drawTool" ><i class="fa-solid fa-pen"></i></button>
+                <button id="eraseTool" >Eraser</button>
+                <button id="lineTool" >Line</button>
+                <button id="rectTool" >Rect</button>
+                <button id="circleTool" >Circle</button>
+                <input type="range" id="sizeSlider" min="1" max="50" value="5" class="w-32 cursor-pointer">
+                
+                <input type="color" id="colorPicker" value="#000000" >
+                <button id="clearButton" >Clear</button>
+                <button id="resetViewButton" >Reset View</button>
+            </div>
+            
+           </div>
+
+        <canvas id="whiteboardCanvas" width="2000px" height="2000px"></canvas>
+      </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

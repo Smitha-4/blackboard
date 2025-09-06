@@ -1,0 +1,32 @@
+body {
+font-family: 'Inter', sans-serif;
+background-color: #f3f4f6;
+display: flex;
+height: 2000%;
+justify-content: center;
+align-items: center;
+margin: 0;
+}
+
+.whiteboard-container {
+width: 100%;
+max-width: 20000px;
+height: 1000px;
+background-color: #000000;
+box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+padding: 1rem;
+}
+
+canvas {
+border: 1px solid #000000;
+background-color: #000000;
+cursor: crosshair;
+touch-action: none; /* Prevents default touch behavior like scrolling */
+}
+#clearButton, #resetViewButton, #eraseTool, #drawTool, #circleTool, #rectTool, #lineTool{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    color: rgb(204, 202, 202);
+    background-color: #616161;
+}
