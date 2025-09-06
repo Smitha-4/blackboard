@@ -23,7 +23,7 @@ background-color: #000000;
 cursor: crosshair;
 touch-action: none; /* Prevents default touch behavior like scrolling */
 }
-#clearButton, #resetViewButton, #eraseTool, #drawTool, #circleTool, #rectTool, #lineTool{
+#clearButton, #resetViewButton, #eraseTool, #drawTool, #circleTool, #rectTool, #lineTool, #savePngButton, #savePdfButton{
     border-radius: 100%;
     width: 50px;
     height: 50px;
